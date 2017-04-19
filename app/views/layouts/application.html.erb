@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsYelpMvp</title>
+    <title>Restaurant Review</title>
     <%= csrf_meta_tags %>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -17,10 +17,13 @@
         </div>
         <ul class="nav navbar-nav navbar-right">
           <li><%= link_to "Restaurants", restaurants_path %></li>
-          <li><%= link_to "Create", new_restaurant_path %></li>
+          <li><%= link_to "Add", new_restaurant_path %></li>
         </ul>
       </div>
     </nav>
     <%= yield %>
+    <div class="footer">
+      <p><%= link_to "The Dopest Shit", "http://www.motherfuckingwebsite.com" %></p>
+    </div>
   </body>
 </html>
