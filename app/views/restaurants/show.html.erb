@@ -1,0 +1,13 @@
+<div class="container">
+  <h2><%= @restaurant.name %></h2>
+  <p>Address: <%= @restaurant.address %></p>
+  <p>Phone: <%= @restaurant.phone_number %></p>
+  <h3>Reviews of <%= @restaurant.name %>:</h3>
+  <hr>
+  <% @restaurant.reviews.each do |review| %>
+    <h4>Rating: <%= review.rating %></h4>
+    <h4><%= review.content %></h4>
+    <hr>
+  <% end %>
+<%= render template: "reviews/_form" %>
+</div>
