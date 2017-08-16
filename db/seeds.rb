@@ -2,7 +2,7 @@ puts 'Cleaning database...'
 Restaurant.destroy_all
 
 puts 'Creating restaurants...'
-10.times do
+100.times do
   generated_restaurant = Restaurant.create(
     name: Faker::RickAndMorty.character,
     address: Faker::RickAndMorty.location,

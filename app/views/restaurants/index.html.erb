@@ -12,6 +12,7 @@
               <p><i class="fa fa-map-marker" aria-hidden="true"></i> <%= restaurant.address %></p>
               <p><i class="fa fa-mobile" aria-hidden="true"></i> <%= restaurant.phone_number %></p>
               <p><i class="fa fa-question" aria-hidden="true"></i> <%= restaurant.category.capitalize %></p>
+              <p>Average Review: <%= average_review(restaurant) %>/5</p>
               <hr>
             </div>
           </div>
